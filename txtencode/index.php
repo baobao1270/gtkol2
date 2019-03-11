@@ -23,7 +23,7 @@
 	    <div class="am-u-md-8 am-u-sm-12 main">
 		    <h1 id="title"><?php v_name($v_href); ?></h1>
 			<ol class="am-breadcrumb">
-                <li><a href="../..">首页</a></li>
+                <li><a href="https://josephcz.win/">博客</a></li>
 				<?php if($v_href){ ?>
                     <li><a href=".."><?php v_title(false); ?></a></li>
                     <li class="am-active"><?php v_name($v_href); ?></li>
