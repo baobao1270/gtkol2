@@ -1,0 +1,34 @@
+<div class="am-form">
+    <div class="am-form-group">
+        <label>原文字</label>
+        <textarea class="am-radius" id="form-raw-text" rows="7"></textarea>
+    </div>
+	
+	<div class="am-form-group">
+        <label>编码方法</label>
+        <select class="am-round" id="form-method"></select>
+    </div>
+	
+	<button type="button" class="am-btn am-btn-primary am-round" style="margin-bottom: 20px;width: 49%;" onclick="requestEncode();">编码</button>
+	<button type="button" class="am-btn am-btn-primary am-round" style="margin-bottom: 20px;width: 49%;" onclick="resultToRaw();">↑↑↑快点上来吧↑↑↑</button>
+	
+	<div class="am-form-group">
+        <label>编码结果</label>
+        <textarea class="am-radius" id="form-result" rows="7" disabled></textarea>
+    </div>
+</div>
+<script>
+function resultToRaw(){
+    $('#form-raw-text').val( $('#form-result').val() );
+	$('#form-result').val('');
+}
+
+function addSelectorItem(val, text){
+    var newItem = $("<option>");
+	newItem.val(val);
+	newItem.text(text);
+	$('#form-method').append(newItem);
+}
+
+loadSelector();
+</script>

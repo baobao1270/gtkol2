@@ -1,0 +1,12 @@
+{
+    "commonTitle": "极客工具箱 by Fubuki",
+    "title"      : "极客工具箱",
+    "name"       : "工具目录",
+	"children"   : [
+	    { "name": "随机事件选择", "href": "rand"      , "open": true  },
+	    { "name": "进制转换"    , "href": "baseconv"  , "open": true  },
+	    { "name": "文字编码"    , "href": "txtencode" , "open": true  },
+	    { "name": "文字哈希"    , "href": "txtencrypt", "open": true  },
+	    { "name": "年化收益计算", "href": "ircalc"    , "open": true  }
+	]
+}
