@@ -7,6 +7,7 @@
 	    { "name": "进制转换"    , "href": "baseconv"  , "open": true  },
 	    { "name": "文字编码"    , "href": "txtencode" , "open": true  },
 	    { "name": "文字哈希"    , "href": "txtencrypt", "open": true  },
-	    { "name": "年化收益计算", "href": "ircalc"    , "open": true  }
+	    { "name": "年化收益计算", "href": "ircalc"    , "open": true  },
+	    { "name": "CET 成绩计算", "href": "cetcalc"   , "open": true  }
 	]
 }
