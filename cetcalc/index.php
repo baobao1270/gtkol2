@@ -72,11 +72,11 @@
 				</ul>
 				
 				<div class="am-tabs-bd">
-				    <div class="am-tab-panel am-active" id="tab-0">
+				    <div class="am-tab-panel am-active am-scrollable-horizontal" id="tab-0">
 					    <?php require_once(dirname(__file__).'/cet4.layout.html'); ?>
 					</div>
 					
-					<div class="am-tab-panel" id="tab-1">
+					<div class="am-tab-panel am-scrollable-horizontal" id="tab-1">
 					    <?php require_once(dirname(__file__).'/cet6.layout.html'); ?>
 					</div>
 				</div>

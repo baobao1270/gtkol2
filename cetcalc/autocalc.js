@@ -66,8 +66,11 @@ function setOutputs(arr){
 }
 
 function setOutputValue(id, value){
-    //if(value
-    $('#g' + id).text(value)
+    if(value > 710){
+        $('#g' + id).text('错误')
+        return
+    }
+    $('#g' + id).text(value.toFixed(2))
 }
 
 function getInputs(){
@@ -85,7 +88,25 @@ function getInputValue(id){
     return v
 }
 
+function checkInput(input){
+    input.value=input.value.replace(/\D/g,'')
+    var i = Number(input.id.substr(-3))
+    var max = cetqs[i]
+    if( (input.value > max) || (input.value.length > 3) ){
+        input.value = input.value.substr(0, input.value.length - 1)
+    }
+    
+    if(input.value < 0){
+        input.value = 0
+    }
+    
+    if(input.value == 0){
+        input.value = ''
+    }
+}
+
 function onInputChange(){
+    checkInput(this)
     setOutputs(autocalc(getInputs()))
 }
 
